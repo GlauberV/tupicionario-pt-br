@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/item_icone"
+        android:layout_width="@dimen/list_item_heigt"
+        android:layout_height="@dimen/list_item_heigt"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/item_layout_textos"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_heigt"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/item_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:fontFamily="bold"
+            android:text="Titulo"/>
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Descrição"/>
+
+    </LinearLayout>
+
+</LinearLayout>
